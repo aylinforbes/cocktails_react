@@ -2,7 +2,7 @@ const token = 'b247717f6d67fdd5aa373d162d40646ecac270ed49c9faa4'
 
 export const server_calls = {
     get: async () => { 
-        const response = await fetch(`http://127.0.0.1:5000/api/cocktails`,
+        const response = await fetch(`https://cocktails-flask.onrender.com/api/cocktails`,
         {
             method: 'GET',
             headers: {
@@ -21,7 +21,7 @@ export const server_calls = {
     },
 
 create: async (data: any = {}) => {
-    const response = await fetch(`http://127.0.0.1:5000/api/cocktails`,
+    const response = await fetch(`https://cocktails-flask.onrender.com/api/cocktails`,
     {
         method: 'POST',
         headers: {
@@ -41,7 +41,7 @@ create: async (data: any = {}) => {
 },
 
 update: async (id: string, data:any = {}) => {
-    const response = await fetch(`http://127.0.0.1:5000/api/cocktails/${id}`,
+    const response = await fetch(`https://cocktails-flask.onrender.com/api/cocktails/${id}`,
     {
         method: 'POST',
         headers: {
@@ -61,7 +61,7 @@ update: async (id: string, data:any = {}) => {
 },
 
 delete: async (id: string) => {
-    const response = await fetch(`http://127.0.0.1:5000/api/cocktails/${id}`,
+    const response = await fetch(`https://cocktails-flask.onrender.com/api/cocktails/${id}`,
     {
         method: 'DELETE',
         headers: {
